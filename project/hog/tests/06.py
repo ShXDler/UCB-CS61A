@@ -5,15 +5,46 @@ test = {
     {
       'cases': [
         {
-          'answer': '5e0e1a4c94a7429afae6399105d34f05',
+          'answer': 'The current leader and a message.',
           'choices': [
-            'Another commentary function.',
-            'An integer representing the score.',
-            'None.'
+            'Nothing (None).',
+            'A message.',
+            'A player.',
+            'The previous leader and a message.',
+            'The current leader and a message.'
           ],
           'hidden': False,
-          'locked': True,
-          'question': 'What does a commentary function return?'
+          'locked': False,
+          'multiline': False,
+          'question': 'What does announce_lead_changes return?'
+        },
+        {
+          'answer': 'When the current leader is different from the previous leader.',
+          'choices': [
+            'When the current leader is the same as the previous leader.',
+            'When the current leader is different from the previous leader.',
+            'After each turn.'
+          ],
+          'hidden': False,
+          'locked': False,
+          'multiline': False,
+          'question': r"""
+          When is the message returned by announce_lead_changes
+          not just an empty string?
+          """
+        },
+        {
+          'answer': 'The leading player from the previous turn.',
+          'choices': [
+            'The opponent player of this turn.',
+            'The current player of this turn.',
+            'The leading player from the previous turn.',
+            'The leading player in the current turn.'
+          ],
+          'hidden': False,
+          'locked': False,
+          'multiline': False,
+          'question': 'What does the parameter last_leader represent?'
         }
       ],
       'scored': False,
@@ -23,127 +54,55 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> #
-          >>> def echo(s0, s1):
-          ...     print(s0, s1)
-          ...     return echo
-          >>> s0, s1 = play(always_roll(1), always_roll(1), dice=make_test_dice(3), goal=5, say=echo)
-          d7882c94106188a2f424c5383b507923
-          b706c6a1e63c19ed82e4eb95fc6ba1cf
-          b57f18b04748377f05b1484da01f28e5
-          # locked
-          """,
-          'hidden': False,
-          'locked': True
-        },
-        {
-          'code': r"""
-          >>> #
-          >>> def count(n):
-          ...     def say(s0, s1):
-          ...         print(n)
-          ...         return count(n + 1)
-          ...     return say
-          >>> s0, s1 = play(always_roll(1), always_roll(1), dice=make_test_dice(3), goal=10, say=count(1))
-          43d176e102c8d95338faf8791aa509b3
-          46caef5ffd6d72c8757279cbcf01b12f
-          16e2cf37e8254529473d9e0a36b75fcb
-          edcbd82ba98a8122be244fa325c62071
-          26f5762c932a578994ea1c8fc7fa6c02
-          # locked
-          """,
-          'hidden': False,
-          'locked': True
-        },
-        {
-          'code': r"""
-          >>> #
-          >>> def echo(s0, s1):
-          ...     print(s0, s1)
-          ...     return echo
-          >>> strat0 = lambda score, opponent: 1 - opponent // 10
-          >>> strat1 = always_roll(3)
-          >>> s0, s1 = play(strat0, strat1, dice=make_test_dice(4, 2, 6), goal=15, say=echo)
-          f4d41f4e29a08f003e0a9a5473c61d5e
-          461ff541bd06a2e3310447d10cc6615b
-          82aad04984903d39bbc21ec190f8a6be
-          # locked
-          """,
-          'hidden': False,
-          'locked': True
-        },
-        {
-          'code': r"""
-          >>> #
-          >>> # Ensure that say is properly updated within the body of play.
-          >>> def total(s0, s1):
-          ...     print(s0 + s1)
-          ...     return echo
-          >>> def echo(s0, s1):
-          ...     print(s0, s1)
-          ...     return total
-          >>> s0, s1 = play(always_roll(1), always_roll(1), dice=make_test_dice(2, 3), goal=15, say=echo)
-          a851cef97171f3eb929be7094e9a3432
-          26f5762c932a578994ea1c8fc7fa6c02
-          072a7e5a36da4da6069d77fa89868297
-          b5f748b949729bc0225f547dce8206af
-          353cf22d8dfbbd2fc3b5586221b0ffca
-          6790f7070fa643e868f99363486b6275
-          # locked
-          """,
-          'hidden': False,
-          'locked': True
-        }
-      ],
-      'scored': True,
-      'setup': r"""
-      >>> from hog import play, always_roll
-      >>> from dice import make_test_dice
-      """,
-      'teardown': '',
-      'type': 'doctest'
-    },
-    {
-      'cases': [
-        {
-          'code': r"""
-          >>> #
-          >>> def echo_0(s0, s1):
-          ...     print('*', s0)
-          ...     return echo_0
-          >>> def echo_1(s0, s1):
-          ...     print('**', s1)
-          ...     return echo_1
-          >>> s0, s1 = play(always_roll(1), always_roll(1), dice=make_test_dice(2), goal=3, say=both(echo_0, echo_1))
-          c1e26c2383bba0314a3621133a7d28ff
-          e4010b4a7d51e81cc1f49e08b015b8eb
-          c1e26c2383bba0314a3621133a7d28ff
-          cad0f4cdee6d8af26abb184d977c50fd
-          # locked
-          """,
-          'hidden': False,
-          'locked': True
-        },
-        {
-          'code': r"""
-          >>> #
-          >>> s0, s1 = play(always_roll(3), always_roll(3), dice=make_test_dice(1, 2, 3, 3), goal=8, say=both(say_scores, announce_lead_changes()))
-          Player 0 now has 0 and Player 1 now has 1
+          >>> # this might not technically be a possible game for the current rules, this shouldn't be relevant
+          >>> def wrapper(s0, s1, last_leader=None):
+          ...     player, message = announce_lead_changes(s0, s1, last_leader)
+          ...     print(player)
+          ...     print(message)
+          ...     return player
+          >>> # Wrapper: calls announce_lead_changes, prints out the return values,
+          >>> # and returns the leading player from announce_lead_changes
+          >>> leader = wrapper(8, 0)
+          0
+          Player 0 takes the lead by 8
+          >>> leader = wrapper(8, 6, leader) # message is None since no change in leading player
+          0
+          None
+          >>> leader = wrapper(18, 6, leader)
+          0
+          None
+          >>> leader = wrapper(18, 22, leader)
+          1
+          Player 1 takes the lead by 4
+          >>> leader = wrapper(22, 22, leader) # leader is None since the scores are equal
+          None
+          None
+          >>> leader = wrapper(22, 42, leader)
+          1
+          Player 1 takes the lead by 20
+          >>> leader = wrapper(30, 42, leader)
+          1
+          None
+          >>> leader = wrapper(30, 77, leader)
+          1
+          None
+          >>> leader = wrapper(83, 77, leader)
+          0
+          Player 0 takes the lead by 6
+          >>> leader = wrapper(83, 84, leader)
+          1
           Player 1 takes the lead by 1
-          Player 0 now has 2 and Player 1 now has 0
-          Player 0 takes the lead by 2
-          Player 0 now has 6 and Player 1 now has 0
-          Player 0 now has 6 and Player 1 now has 11
-          Player 1 takes the lead by 5
+          >>> leader
+          1
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         }
       ],
       'scored': True,
       'setup': r"""
-      >>> from hog import play, always_roll, both, announce_lead_changes, say_scores
-      >>> from dice import make_test_dice
+      >>> from hog import announce_lead_changes
       """,
       'teardown': '',
       'type': 'doctest'
