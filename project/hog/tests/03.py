@@ -6,84 +6,75 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> take_turn(2, 5, 0, make_test_dice(4, 5, 1))
+          >>> take_turn(2, 0, make_test_dice(4, 5, 1))
           9
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> take_turn(3, 5, 0, make_test_dice(4, 6, 1))
+          >>> take_turn(3, 0, make_test_dice(4, 6, 1))
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> take_turn(0, 3, 2)
+          >>> take_turn(0, 56)
           9
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> take_turn(0, 2, 15)
-          4
+          >>> take_turn(0, 47)
+          7
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> take_turn(0, 10, 1)
-          10
+          >>> take_turn(0, 90)
+          19
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> take_turn(2, 3, 0, make_test_dice(6))
+          >>> take_turn(2, 0, make_test_dice(6))
           12
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> take_turn(9, 0, 0, make_test_dice(4))
+          >>> take_turn(9, 0, make_test_dice(4))
           36
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> take_turn(7, 8, 0, make_test_dice(4))
+          >>> take_turn(7, 0, make_test_dice(4))
           28
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> take_turn(8, 9, 0, make_test_dice(5))
+          >>> take_turn(8, 0, make_test_dice(5))
           40
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         }
       ],
       'scored': True,
@@ -97,13 +88,12 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> hog.take_turn(5, 6, 0) # Make sure you call roll_dice!
+          >>> hog.take_turn(5, 0) # Make sure you call roll_dice!
           Called roll dice!
           9002
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         }
       ],
       'scored': True,

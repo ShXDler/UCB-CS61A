@@ -1,390 +1,301 @@
 test = {
   'name': 'Question 2',
-  'points': 4,
+  'points': 1,
   'suites': [
     {
       'cases': [
         {
-          'answer': 'The function mapped to the digit 3',
-          'choices': [
-            'The function mapped to the digit 1',
-            'The function mapped to the digit 2',
-            'The function mapped to the digit 3',
-            'The function mapped to the digit 5'
-          ],
-          'hidden': False,
-          'locked': False,
-          'multiline': False,
-          'question': r"""
-          The opponent's score is 123. The current player's score is 5.
-          Say the current player decides to roll 0 dice on this turn.
-          What is the first function applied to the current player's score (5)
-          according to Hefty Hogs?
-          """
-        },
-        {
-          'answer': 'The function mapped to the digit 2',
-          'choices': [
-            'The function mapped to the digit 1',
-            'The function mapped to the digit 2',
-            'The function mapped to the digit 3',
-            'The function mapped to the digit 5'
-          ],
-          'hidden': False,
-          'locked': False,
-          'multiline': False,
-          'question': 'What is the second function applied to the result of the first?'
-        },
-        {
-          'answer': 'The function mapped to the digit 1',
-          'choices': [
-            'The function mapped to the digit 1',
-            'The function mapped to the digit 2',
-            'The function mapped to the digit 3',
-            'The function mapped to the digit 5'
-          ],
-          'hidden': False,
-          'locked': False,
-          'multiline': False,
-          'question': 'What is the third function applied to the result of the second?'
-        },
-        {
-          'answer': 'f1( f2( f3(5) )) % 30',
-          'choices': [
-            'f1( f2( f3(5) ))',
-            'f1( f2( f3(5) )) % 30',
-            'f3( f2( f1(5) ))',
-            'f3( f2( f1(5) )) % 30'
-          ],
-          'hidden': False,
-          'locked': False,
-          'multiline': False,
-          'question': r"""
-          What is the overall result of Hefty Hogs for this turn?
-          The opponent's score is 123, and the current player's score is 5.
-          """
-        }
-      ],
-      'scored': False,
-      'type': 'concept'
-    },
-    {
-      'cases': [
-        {
           'code': r"""
-          >>> hefty_hogs(5, 123)
-          9
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(5, 456)
-          29
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> a = hefty_hogs(5, 123)
-          >>> a # check that the value is being returned, not printed
-          9
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(3, 12345)
-          9
-          >>> # ban str and indexing (lists)
-          >>> test.check('hog.py', 'hefty_hogs', ['Str', 'Slice', 'List', 'ListComp', 'Index', 'Subscript', 'For'])
-          True
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(64, 67)
-          24
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(12, 72)
-          16
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(72, 22)
-          18
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(3, 56)
-          0
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(439, 709)
-          2
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(61, 16)
-          10
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(99, 84)
-          24
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(25, 67)
-          24
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(5, 90)
+          >>> free_bacon(4)
           6
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hefty_hogs(54, 56)
-          4
+          >>> free_bacon(1)
+          9
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hefty_hogs(15, 64)
-          24
+          >>> free_bacon(20)
+          12
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hefty_hogs(80, 91)
-          10
+          >>> free_bacon(45)
+          9
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hefty_hogs(6, 2)
-          18
+          >>> free_bacon(15)
+          6
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hefty_hogs(74, 16)
-          4
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(12, 22)
-          18
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(12, 5)
-          0
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(69, 65)
-          24
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(15, 6)
+          >>> free_bacon(13)
           8
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hefty_hogs(69, 62)
-          2
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(98, 40)
-          4
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(15, 95)
-          3
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(56, 4)
-          21
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(44, 64)
-          2
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(40, 73)
-          28
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(192, 343)
+          >>> free_bacon(44)
           10
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hefty_hogs(90, 15)
-          0
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(6, 48)
-          5
-          """,
-          'hidden': False,
-          'locked': False,
-          'multiline': False
-        },
-        {
-          'code': r"""
-          >>> hefty_hogs(72, 31)
+          >>> free_bacon(37)
           6
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hefty_hogs(5, 22)
+          >>> free_bacon(40)
+          14
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(24)
+          8
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(46)
+          8
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(99)
+          10
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(10)
+          11
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(47)
+          7
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(67)
+          9
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(92)
+          17
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(9)
+          1
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(25)
+          7
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(75)
+          12
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(82)
+          16
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(88)
+          10
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(72)
           15
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hefty_hogs(34, 40)
-          0
+          >>> free_bacon(41)
+          13
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(15)
+          6
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(42)
+          12
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(93)
+          16
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(99)
+          10
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(73)
+          14
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(4)
+          6
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(83)
+          15
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(34)
+          9
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(4)
+          6
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(53)
+          12
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(19)
+          2
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(1)
+          9
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> free_bacon(85)
+          13
+          """,
+          'hidden': False,
+          'locked': False
         }
       ],
       'scored': True,
       'setup': r"""
       >>> from hog import *
-      >>> import tests.construct_check as test
       """,
       'teardown': '',
       'type': 'doctest'

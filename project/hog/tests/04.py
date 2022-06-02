@@ -1,972 +1,864 @@
 test = {
   'name': 'Question 4',
-  'points': 1,
+  'points': 2,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> hog_pile(25, 43)
-          0
+          >>> is_swap(2, 4)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(32, 33)
-          0
+          >>> is_swap(11, 1)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(7, 7)
-          7
+          >>> is_swap(1, 0)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(26, 26)
-          6
+          >>> is_swap(15, 46)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(23, 23)
-          3
+          >>> is_swap(23, 4)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(193, 42)
-          0
+          >>> is_swap(15, 23)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> a = hog_pile(187, 187)
-          >>> a # check that the value is being returned, not printed
-          7
+          >>> is_swap(92, 3)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(64, 67)
-          0
+          >>> is_swap(559, 629)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(12, 72)
-          2
+          >>> is_swap(960, 144)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(72, 22)
-          2
+          >>> is_swap(527, 493)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(3, 56)
-          0
+          >>> is_swap(664, 249)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(439, 709)
-          9
+          >>> is_swap(174, 439)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(61, 16)
-          0
+          >>> is_swap(743, 958)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(99, 84)
-          0
+          >>> is_swap(713, 227)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(25, 67)
-          0
+          >>> is_swap(502, 579)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(5, 90)
-          0
+          >>> is_swap(136, 851)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(54, 56)
-          0
+          >>> is_swap(348, 638)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(15, 64)
-          0
+          >>> is_swap(543, 825)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(80, 91)
-          0
+          >>> is_swap(765, 416)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(6, 2)
-          0
+          >>> is_swap(417, 670)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(74, 16)
-          0
+          >>> is_swap(176, 74)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(12, 22)
-          2
+          >>> is_swap(744, 231)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(12, 5)
-          0
+          >>> is_swap(757, 908)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(69, 65)
-          0
+          >>> is_swap(605, 205)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(15, 6)
-          0
+          >>> is_swap(941, 278)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(69, 62)
-          0
+          >>> is_swap(275, 120)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(98, 40)
-          0
+          >>> is_swap(622, 757)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(15, 95)
-          5
+          >>> is_swap(274, 259)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(56, 4)
-          0
+          >>> is_swap(610, 511)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(44, 64)
-          4
+          >>> is_swap(658, 526)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(40, 73)
-          0
+          >>> is_swap(917, 518)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(192, 343)
-          0
+          >>> is_swap(899, 192)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(90, 15)
-          0
+          >>> is_swap(318, 474)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(6, 48)
-          0
+          >>> is_swap(534, 713)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(72, 31)
-          0
+          >>> is_swap(24, 537)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(5, 22)
-          0
+          >>> is_swap(193, 769)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(34, 40)
-          0
+          >>> is_swap(15, 614)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(45, 45)
-          5
+          >>> is_swap(403, 758)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(16, 98)
-          0
+          >>> is_swap(599, 16)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(5, 54)
-          0
+          >>> is_swap(71, 510)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(88, 66)
-          0
+          >>> is_swap(391, 728)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(85, 68)
-          0
+          >>> is_swap(873, 758)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(55, 33)
-          0
+          >>> is_swap(521, 45)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(30, 40)
-          0
+          >>> is_swap(653, 421)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(844, 251)
-          0
+          >>> is_swap(387, 434)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(53, 83)
-          3
+          >>> is_swap(467, 316)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(41, 64)
-          0
+          >>> is_swap(105, 41)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(7, 37)
-          7
+          >>> is_swap(219, 7)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(12, 98)
-          0
+          >>> is_swap(931, 908)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(92, 14)
-          0
+          >>> is_swap(435, 860)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(49, 21)
-          0
+          >>> is_swap(817, 277)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(45, 59)
-          0
+          >>> is_swap(419, 753)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(643, 892)
-          0
+          >>> is_swap(580, 377)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(40, 58)
-          0
+          >>> is_swap(837, 552)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(71, 8)
-          0
+          >>> is_swap(732, 802)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(81, 68)
-          0
+          >>> is_swap(563, 337)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(40, 54)
-          0
+          >>> is_swap(685, 424)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(11, 33)
-          0
+          >>> is_swap(480, 907)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(96, 73)
-          0
+          >>> is_swap(57, 485)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(11, 13)
-          0
+          >>> is_swap(86, 924)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(37, 61)
-          0
+          >>> is_swap(154, 215)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(2, 15)
-          0
+          >>> is_swap(518, 617)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(39, 72)
-          0
+          >>> is_swap(435, 714)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(399, 192)
-          0
+          >>> is_swap(664, 140)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(5, 22)
-          0
+          >>> is_swap(456, 651)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(23, 25)
-          0
+          >>> is_swap(486, 217)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(205, 663)
-          0
+          >>> is_swap(4, 526)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(70, 10)
-          0
+          >>> is_swap(99, 72)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(34, 16)
-          0
+          >>> is_swap(685, 238)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(81, 9)
-          0
+          >>> is_swap(24, 593)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(11, 87)
-          0
+          >>> is_swap(288, 529)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(38, 54)
-          0
+          >>> is_swap(166, 54)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(63, 40)
-          0
+          >>> is_swap(117, 575)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(51, 77)
-          0
+          >>> is_swap(828, 631)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(74, 69)
-          0
+          >>> is_swap(985, 905)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(39, 36)
-          0
+          >>> is_swap(932, 202)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(73, 90)
-          0
+          >>> is_swap(619, 602)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(114, 792)
-          0
+          >>> is_swap(214, 114)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(11, 55)
-          0
+          >>> is_swap(966, 128)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(46, 74)
-          0
+          >>> is_swap(787, 46)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(46, 10)
-          0
+          >>> is_swap(394, 784)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(9, 73)
-          0
+          >>> is_swap(859, 137)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(19, 81)
-          0
+          >>> is_swap(465, 136)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(7, 0)
-          0
+          >>> is_swap(245, 205)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(596, 980)
-          0
+          >>> is_swap(441, 167)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(23, 40)
-          0
+          >>> is_swap(404, 115)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(74, 67)
-          0
+          >>> is_swap(727, 618)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(38, 83)
-          0
+          >>> is_swap(407, 243)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(56, 46)
-          6
+          >>> is_swap(516, 539)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(3, 27)
-          0
+          >>> is_swap(499, 281)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(39, 0)
-          0
+          >>> is_swap(535, 807)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(89, 56)
-          0
+          >>> is_swap(753, 857)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(13, 68)
-          0
+          >>> is_swap(160, 909)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(44, 28)
-          0
+          >>> is_swap(864, 428)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(59, 15)
-          0
+          >>> is_swap(333, 699)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(79, 49)
-          9
+          >>> is_swap(288, 975)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(4, 22)
-          0
+          >>> is_swap(877, 534)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(31, 67)
-          0
+          >>> is_swap(671, 323)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(82, 93)
-          0
+          >>> is_swap(686, 874)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(67, 18)
-          0
+          >>> is_swap(18, 907)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(4, 24)
-          4
+          >>> is_swap(692, 179)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(64, 67)
-          0
+          >>> is_swap(178, 662)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(19, 62)
-          0
+          >>> is_swap(297, 531)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(38, 97)
-          0
+          >>> is_swap(986, 422)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(51, 53)
-          0
+          >>> is_swap(419, 105)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(52, 63)
-          0
+          >>> is_swap(554, 180)
+          False
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> hog_pile(57, 40)
-          0
+          >>> is_swap(744, 722)
+          True
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         }
       ],
       'scored': True,

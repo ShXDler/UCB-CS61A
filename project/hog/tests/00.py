@@ -17,8 +17,7 @@ test = {
           4
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         }
       ],
       'scored': True,
@@ -40,7 +39,6 @@ test = {
           ],
           'hidden': False,
           'locked': False,
-          'multiline': False,
           'question': 'Which of the following is the correct way to "roll" a fair, six-sided die?'
         }
       ],

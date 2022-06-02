@@ -10,8 +10,7 @@ test = {
           10
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -19,8 +18,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -28,18 +26,15 @@ test = {
           9
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
-          >>> a = roll_dice(4, make_test_dice(1, 2, 3))
-          >>> a # check that the value is being returned, not printed
+          >>> roll_dice(4, make_test_dice(1, 2, 3))
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -48,13 +43,12 @@ test = {
           1
           >>> # Make sure you call dice exactly num_rolls times!
           >>> # If you call it fewer or more than that, it won't be at the right spot in the cycle for the next roll
-          >>> # Note that a return statement within a loop ends the loop
+          >>> # Note that a return statement in a for loop ends the loop
           >>> roll_dice(1, counted_dice)
           6
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -64,8 +58,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         }
       ],
       'scored': True,
@@ -83,8 +76,7 @@ test = {
           16
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -92,8 +84,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -120,8 +111,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         }
       ],
       'scored': True,
@@ -146,8 +136,7 @@ test = {
           2
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -156,8 +145,7 @@ test = {
           9
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -170,8 +158,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -180,8 +167,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -194,8 +180,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -210,8 +195,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -224,8 +208,7 @@ test = {
           9
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -238,8 +221,7 @@ test = {
           9
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -248,8 +230,7 @@ test = {
           12
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -258,8 +239,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -270,8 +250,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -282,8 +261,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -298,8 +276,7 @@ test = {
           17
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -312,8 +289,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -322,8 +298,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -334,8 +309,7 @@ test = {
           25
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -350,8 +324,7 @@ test = {
           2
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -362,8 +335,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -376,8 +348,7 @@ test = {
           4
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -386,8 +357,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -396,8 +366,7 @@ test = {
           13
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -406,8 +375,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -416,8 +384,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -432,8 +399,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -444,8 +410,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -454,8 +419,7 @@ test = {
           8
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -468,8 +432,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -480,8 +443,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -490,8 +452,7 @@ test = {
           14
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -502,8 +463,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -514,8 +474,7 @@ test = {
           7
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -524,8 +483,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -540,8 +498,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -556,8 +513,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -568,8 +524,7 @@ test = {
           12
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -578,8 +533,7 @@ test = {
           5
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -590,8 +544,7 @@ test = {
           5
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -606,8 +559,7 @@ test = {
           5
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -616,8 +568,7 @@ test = {
           20
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -626,8 +577,7 @@ test = {
           10
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -636,8 +586,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -646,8 +595,7 @@ test = {
           12
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -660,8 +608,7 @@ test = {
           13
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -672,8 +619,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -682,8 +628,7 @@ test = {
           14
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -692,8 +637,7 @@ test = {
           9
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -704,8 +648,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -720,8 +663,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -732,8 +674,7 @@ test = {
           16
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         },
         {
           'code': r"""
@@ -742,8 +683,7 @@ test = {
           1
           """,
           'hidden': False,
-          'locked': False,
-          'multiline': False
+          'locked': False
         }
       ],
       'scored': True,
